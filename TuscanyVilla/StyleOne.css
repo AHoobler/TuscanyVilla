@@ -8,10 +8,9 @@
 }
 
 section.grid.item.grid-item-1 {
-    background-color: dimgrey;
+    background-color: #333333;
     grid-column: 1 / span 9;
     color: white;
-
 }
 
 p0{
@@ -70,11 +69,10 @@ section.grid-item.grid-item-3 {
 }
 
 section.grid-item.grid-item-4 {
-    background-color: dimgray;
+    background-color: #333333;
     grid-column: 1 / span 9;
     height: 100px;
-    text-align: center;  
-    
+    text-align: center;
 }
 
 p3{
@@ -119,15 +117,16 @@ section.grid-item.grid-item-6 {
 }
 
 section.grid-item.grid-item-7 {
-    background-color: green;
+    background-color: #333333;
     grid-column: 4 / span 6;
     height: 300px;
 }
 
 section.grid-item.grid-item-8 {
-    background-color: orangered;
+    background-color: white;
     grid-column: 1 / span 6;
     height: 300px;
+    color: black;
 
 }
 
@@ -139,10 +138,13 @@ section.grid-item.grid-item-9 {
 }
 
 section.grid-item.grid-item-b{
-    background-color: burlywood;
+    background-color: #333333;
     height: 100px;
     grid-column: 1 / span 9;
+    text-align: center;
 }
+
+
 
 section.grid-item.grid-item-10 {
     background-size: cover;
@@ -152,9 +154,12 @@ section.grid-item.grid-item-10 {
 }
 
 section.grid-item.grid-item-11 {
-    background-color: blueviolet;
+    background-color: white;
     grid-column: 4 / span 3;
     height: 300px;
+    color: black;
+    text-align: center;
+    
 }
 
 section.grid-item.grid-item-12 {
@@ -164,10 +169,23 @@ section.grid-item.grid-item-12 {
     height: 300px;
 }
 
+p11{
+    font-weight: bold;
+}
+
+p12{
+    font-weight: bold;
+}
+
+p13{
+    margin-top:25%;
+}
 section.grid-item.grid-item-13 {
-    background-color: darkred;
+    background-color: white;
     grid-column: 1 / span 3;
     height: 300px;
+    color: black;
+    text-align: center;
 }
 
 section.grid-item.grid-item-14 {
@@ -177,12 +195,28 @@ section.grid-item.grid-item-14 {
     height: 300px;
 }
 
-section.grid-item.grid-item-15 {
-    background-color: peru;
-    grid-column: 7 / span 3;
-    height: 300px;
+p14{
+    font-weight: bold;
 }
 
+p15{
+
+}
+section.grid-item.grid-item-15 {
+    background-color: white;
+    grid-column: 7 / span 3;
+    height: 300px;
+    color: black;
+    text-align: center;
+}
+
+p16{
+    font-weight: bold;
+}
+
+p17{
+
+}
 section.grid-item.grid-item-16 {
     background-image: url('Images/patio.jpg');
     background-size: cover;
@@ -191,11 +225,20 @@ section.grid-item.grid-item-16 {
 }
 
 section.grid-item.grid-item-17 {
-    background-color: paleturquoise;
+    background-color: white;
     grid-column: 4 / span 3;
     height: 300px;
+    color: black;
+    text-align: center;
 }
 
+p18{
+    font-weight: bold; 
+}
+
+p19{
+
+}
 section.grid-item.grid-item-18 {
     background-image: url('Images/Villa-Vanna-231-348x348.jpg');
     background-size: cover;
@@ -204,19 +247,133 @@ section.grid-item.grid-item-18 {
 }
 
 section.grid-item.grid-item-19 {
-    background-color: lime;
+    background-color: #333333;
     grid-column: 1 / span 9;
     height: 100px;
+    text-align: center;
 }
 
 section.grid-item.grid-item-20 {
-    background-color: aquamarine;
+    background-color: white;
     grid-column: 1 / span 9;
-    height: 150px;
+    
 }
 
+.carousel-wrapper
+
+{
+    height: 300px;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    grid-column: 1 / span 9;
+    
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+}
+
+.arrow-prev {
+    left: 0;
+}
+
+.arrow-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    /*background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');*/
+    background-size: cover;
+    color: black;
+}
+
+.item-2 {
+    /*background: url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');*/
+    background-size: cover;
+    color: black;
+}
+
+.item-3 {
+    /*background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');*/
+    background-size: cover;
+    color: black;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+
+
+
+
+
+
 section.grid-item.grid-item-21 {
-    background-color: darkmagenta;
+    background-color: #333333;
     grid-column: 1 / span 9;
     height: 100px;
+    text-align: center;
+}
+
+section.grid-item.grid-item-22 {
+    background-color: white;
+    grid-column: 1 / span 9;
+    height: 200px;
+}
+
+section.grid-item.grid-item-23 {
+    background-color: #333333;
+    grid-column: 1 / span 9;
+    height: 100px;
+    text-align: center;
 }
