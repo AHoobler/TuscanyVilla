@@ -369,8 +369,12 @@ section.grid-item.grid-item-22 {
     background-color: white;
     grid-column: 1 / span 9;
     height: 200px;
+    color: black;
 }
 
+p29{
+    float: right;
+}
 section.grid-item.grid-item-23 {
     background-color: #333333;
     grid-column: 1 / span 9;
