@@ -413,4 +413,9 @@ button{
 p{
     background-color: #333333;
     text-align: center;
+    margin: 30px;
+    opacity: .6;
+    font-size: large;
+
+    
 }
